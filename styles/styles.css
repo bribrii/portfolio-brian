@@ -1,17 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 
+:root {
+    --cor-primaria: #e49443;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #464AFA;
+    --cor-extra: #e7a869;
+
+    --fonte-krona: "Krona One", sans-serif;
+    --fonte-montserrat: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    height: 100vh;
     box-sizing: border-box;
     background: radial-gradient(circle, #ffffff, #e49443);
-    color: black;
+    color: var(--cor-secundaria);
     /* overflow: hidden; */
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link {
+    font-family: var(--fonte-montserrat);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
 }
 
 img {
@@ -19,11 +45,11 @@ img {
 }
 
 strong {
-    color: #464AFA
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
-    margin: 10% 15%;
+    margin: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -38,12 +64,12 @@ strong {
 
 .apresentacao-conteudo-titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-krona);
 }
 
 .apresentacao-conteudo-texto {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
 }
 
 .apresentacao-botoes {
@@ -55,18 +81,17 @@ strong {
 }
 
 .apresentacao-subtitulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-krona);
     font-weight: 400;
     font-size: 24px;
 }
 
 .botao {
-    /* background-color: #b8860b; */
     display: flex;
     justify-content: center;
     gap: 5px;
-    border: 2.5px solid #464AFA;
-    color: #464AFA;
+    border: 2.5px solid var(--cor-terciaria);
+    color: var(--cor-terciaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
@@ -74,9 +99,19 @@ strong {
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-montserrat);
 }
 
 .botao:hover {
-    background-color: #e7a869;
+    background-color: var(--cor-extra);
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fonte-montserrat);
+    font-size: 24px;
+    font-weight: 600;
 }
