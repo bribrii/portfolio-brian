@@ -20,11 +20,22 @@ body {
     box-sizing: border-box;
     background: radial-gradient(circle, #ffffff, #e49443);
     color: var(--cor-secundaria);
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 1.5% 0% 0% 15%;
 }
 
 .cabecalho-menu {
@@ -34,7 +45,7 @@ body {
 
 .cabecalho-menu-link {
     font-family: var(--fonte-montserrat);
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -49,26 +60,27 @@ strong {
 }
 
 .apresentacao {
-    margin: 5% 15%;
+    margin: 3% 16%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 80px;
 }
 
 .apresentacao-conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 23px;
 }
 
 .apresentacao-conteudo-titulo {
-    font-size: 36px;
+    font-size: 1.8rem;
     font-family: var(--fonte-krona);
 }
 
 .apresentacao-conteudo-texto {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-family: var(--fonte-montserrat);
 }
 
@@ -77,27 +89,27 @@ strong {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 18px;
 }
 
 .apresentacao-subtitulo {
     font-family: var(--fonte-krona);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.35rem;
 }
 
 .botao {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 4px;
     border: 2.5px solid var(--cor-terciaria);
     color: var(--cor-terciaria);
-    width: 378px;
+    width: 40%;
     text-align: center;
-    border-radius: 8px;
-    font-size: 24px;
+    border-radius: 15px;
+    font-size: 1.25rem;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 10px 0;
     text-decoration: none;
     font-family: var(--fonte-montserrat);
 }
@@ -106,12 +118,35 @@ strong {
     background-color: var(--cor-extra);
 }
 
+.apresentacao-imagem {
+    width: 50%;
+}
+
 .rodape {
     color: var(--cor-secundaria);
     background-color: var(--cor-primaria);
     padding: 20px;
     text-align: center;
     font-family: var(--fonte-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
 }
