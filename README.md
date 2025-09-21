@@ -1,4 +1,8 @@
 # Portfolio Brian
+<p align="center">
+<img src="assets/print-site-portfolio.png" alt="Print do site Portfolio Brian" width="700" height="400">
+</p>
+
 Projeto de portfólio pessoal desenvolvido em HTML e CSS, com design responsivo, para apresentar informações sobre mim, habilidades e contato.
 
 ### Como visualizar/executar
