@@ -20,7 +20,6 @@ body {
     box-sizing: border-box;
     background: radial-gradient(circle, #ffffff, #e49443);
     color: var(--cor-secundaria);
-    overflow: hidden;
 }
 
 html, body {
