@@ -133,19 +133,54 @@ strong {
 
 @media (max-width: 1200px) {
     .cabecalho {
-        padding: 10%;
+        padding: 7%;
     }
 
     .cabecalho-menu {
         justify-content: center;
     }
+
+    .cabecalho-menu-link {
+    font-size: 1.1rem;
+    }
     
     .apresentacao {
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 1% 5% 10% 5%;
+        margin: 0;
+        gap: 40px;
     }
 
     .apresentacao-conteudo {
         width: auto;
+    }
+
+    .apresentacao-conteudo-titulo {
+        font-size: 1.4rem;
+    }
+
+    .apresentacao-conteudo-texto {
+        font-size: 0.9rem;
+    }
+
+    .apresentacao-subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .botao {
+        width: 30%;
+        font-size: 1.1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao-imagem {
+        width: 200px;
+        height: 200px;
+    }
+
+    .rodape {
+        padding: 10px;
+        font-size: 1rem;
     }
 }
